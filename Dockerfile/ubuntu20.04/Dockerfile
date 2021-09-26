@@ -37,7 +37,7 @@ ARG wkdir=/home/work
 ARG userpass=satoshi
 
 # グループの作成
-RUN groupadd -g sudo
+#RUN groupadd -g sudo
 
 # ユーザーを作成
 RUN useradd -m -u ${UID} -g sudo satoshi && \
@@ -47,3 +47,4 @@ RUN useradd -m -u ${UID} -g sudo satoshi && \
 USER satoshi
 # 作業用ディレクトリの設定
 WORKDIR /home/satoshi
+
